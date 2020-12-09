@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link href="profile.css" rel="stylesheet"type="text/css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="/">
+            <img id ="logo" src="logo.png">
+        </a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about">ABOUT US</a></li>
+                    <li><a href="contacts">CONTACTS</a></li>
+                    <li><a href="categories">CATEGORIES</a></li>
+                    <li><a href="profile">PROFILE</a></li>
+                </ul>
+
+                <ul class="nav2">
+                    <li class="iconic"><a href="login"><img id ="signup" src="person.png"></a></li>
+                    <li class="cart"><a href="cart"><img id ="carticon" src="cart.png"></a></li>
+                </ul>
+            </nav>         
+    </div>
+    
+    
+<div id="container">
+    <div id="main">
+        <center><h1>PERSONAL INFORMATION</h1></center>
+        <div class = "center">
+            <div class="box-set">
+                <!--
+                <form action="api/user/submit_info" method="POST">
+                    <figure class="box">
+                        <div class = "center2">
+                            <label>First Name</label>
+                            <br>
+                            <input name="firstname" type="text" class="input" placeholder = "First Name" required>
+                            <br><br>
+                            <label>Last Name</label>
+                            <br>
+                            <input name="lastname" type="text" class="input" placeholder = "Last Name" required>
+                            <br><br>
+                            <label>Contact Number 1</label>
+                            </br>
+                            <input name="number_one" type="text" class="input" placeholder = "Contact Number 1" required>
+                            <br><br>
+                            <label>Contact Number 2</label>
+                            <br>
+                            <input name="number_two" type="text" class="input" placeholder = "Contact Number 2">
+                            <br>
+                        </div>
+                    </figure>
+                    <figure class="box">
+                        <div class = "center3">
+                            <label>Email Address</label>
+                            <div class = "edit">
+                                <a href="profile"><img src="edit.png" alt="" width="40" height="40"></a>
+                            </div>
+                            <br>
+                            <input name="email" type="text" class="input" placeholder = "Email Address" required>
+                            <br><br>
+                            <label>Address 1</label>
+                            <br>
+                            <input name="address_one" type="text" class="input" placeholder = "Address 1" required>
+                            <br><br>
+                            <label>Address 2</label>
+                            <br>
+                            <input name="address_two" type="text" class="input" placeholder = "Address 2">
+                            <br><br>
+                            <label>Your Facebook Account Link</label>
+                            </br>
+                            <input name="facebook" type="text" class="input" placeholder = "Facebook Link">
+                            <br>
+                        </div>
+                    </figure>
+                    <div class="form-btn-container">
+                        <input class="btn" type="submit" value="SAVE CHANGES">
+                    </div>
+                </form>
+                -->
+                <div class="profile-info">
+                    <p>Email: <%= data.email %></p>
+                    <p>Firstname: <%= data.firstname %></p>
+                    <p>Lastname: <%= data.lastname %></p>
+                    <p>Contact Number #1: <%= data.contact_one %></p>
+                    <% if (data.contact_two != undefined) { %>
+                        <p>Contact Number #2: <%= data.contact_two %></p>
+                    <% } %>
+                    <p>Address #1: <%= data.address_one %></p>
+                    <% if (data.address_two != undefined) { %>
+                        <p>Address #2: <%= data.address_two %></p>
+                    <% } %>
+                    <p>Facebook: <%= data.facebook %></p>
+                </div>
+                <div class="btn-container">
+                    <div class="btn">
+                        <form method="GET" action="deleteacct">
+                            <input type="submit" value="DELETE ACCOUNT" class="btn" />
+                        </form>
+                    </div>
+                    <div class="btn">
+                        <a href="#">
+                            <form method="GET" action="logout">
+                                <input type="submit" value="LOGOUT" class="btn" />
+                            </form>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+
+    </div>
+    <ul class="navigation2">
+        <li><a href="categories">Products</a></li>
+        <li><a href="about">FAQs</a></li>
+        <li><a href="contacts">Contact Us</a></li>
+    </ul>
+
+    <div class="footer-bottom">
+        &copy; Copyright 2020 Don and Doff Medical Equipment Trading - All Rights Reserved
+    </div>
+</footer>
+</body>
+</html>
