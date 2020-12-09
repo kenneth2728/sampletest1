@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link href="signup.css" rel="stylesheet"type="text/css">
+</head>
+<body>
+<div class="header">
+    <a href="/">
+        <img id ="logo" src="logo.png">
+    </a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="/">HOME</a></li>
+                <li><a href="about">ABOUT US</a></li>
+                <li><a href="contacts">CONTACTS</a></li>
+                <li><a href="categories">CATEGORIES</a></li>
+                <li><a href="profile">PROFILE</a></li>
+            </ul>
+
+            <ul class="nav2">
+                <li class="iconic"><a href="login"><img id ="signup" src="person.png"></a></li>
+                <li class="cart"><a href="cart"><img id ="carticon" src="cart.png"></a></li>
+            </ul>
+        </nav>         
+</div>
+<div id="container">
+    <div id="main">
+        <center><h1>REGISTER</h1></center>
+        <div class = "center">
+            <div class="box-set">
+                <form method="POST" action="/api/auth/signup">
+                    <% if (error_msg.length > 0) { %>
+                        <p id="error-msg"><%= error_msg %></p>
+                    <% } %>
+                    <figure class="box">
+                        <div class = "center2">
+                                <label>First Name *</label>
+                            <br>
+                                <input name="firstname" type="text" class="input" placeholder = "First Name" required>
+                            <br>
+                                <label>Last Name *</label>
+                            <br>
+                                <input name="lastname" type="text" class="input" placeholder = "Last Name" required>
+                            <br>
+                                <label>Email Address *</label>
+                            <br>
+                                <input name="email" type="text" class="input" placeholder = "Email Address" required>
+                            <br>
+                                <label>Password *</label>
+                            <br>
+                                <input name="password" type="password" class="input" placeholder = "Password" required>
+                            <br>
+                                <label>Your Facebook Link *</label>
+                            <br>
+                                <input name="facebook" type="text" class="input" placeholder = "Facebook Link" required>
+                        </div>
+                    </figure>
+                    <figure class="box">
+                        <div class = "center3">
+                            <label>Are you from Quezon City or Bataan? *</label>
+                            <br>
+                                <select class="dropdown">
+                                    <option value="" disabled selected>Choose here...</option>
+                                    <option value="Quezon City">Quezon City</option>
+                                    <option value="Bataan">Bataan</option>
+                                </select>
+                            <br>
+                                <label>Address 1 *</label>
+                            <br>
+                                <input name="address_one" type="text" class="input" placeholder = "Address 1" required>
+                            <br>
+                                <label>Address 2</label>
+                            <br>
+                                <input name="address_two" type="text" class="input" placeholder = "Address 2">
+                            <br>
+                                <label>Contact Number 1*</label>
+                            <br>
+                                <input name="number_one" type="text" class="input" placeholder = "Contact Number 1" required>
+                            <br>
+                                <label>Contact Number 2</label>
+                            <br>
+                                <input name="number_two" type="text" class="input" placeholder = "Contact Number 2">
+                        </div>
+                    </figure>
+                    <center>
+                        <div class="note">
+                            <p>NOTE: At the moment, processing of orders is available within Quezon City and Bataan only.</p>
+                        </div>
+                        <div class="inputfield">
+                            <input type="checkbox" name="terms"> Agreed to terms and conditions<br>
+                            <a href="/"><input type="submit" value="Register" class="btn"></a>
+                        </div>
+                    </center>
+                </form>
+            </div> 
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+
+    </div>
+    <ul class="navigation2">
+        <li><a href="categories">Products</a></li>
+        <li><a href="about">FAQs</a></li>
+        <li><a href="contacts">Contact Us</a></li>
+    </ul>
+
+    <div class="footer-bottom">
+        &copy; Copyright 2020 Don and Doff Medical Equipment Trading - All Rights Reserved
+    </div>
+</footer>
+</body>
+</html>
