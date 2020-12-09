@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link href="cart.css" rel="stylesheet"type="text/css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="/">
+            <img id ="logo" src="logo.png">
+        </a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about">ABOUT US</a></li>
+                    <li><a href="contacts">CONTACTS</a></li>
+                    <li><a href="categories">CATEGORIES</a></li>
+                    <li><a href="profile">PROFILE</a></li>
+                </ul>
+
+                <ul class="nav2">
+                    <li class="iconic"><a href="login"><img id ="signup" src="person.png"></a></li>
+                    <li class="cart"><a href="cart"><img id ="carticon" src="cart.png"></a></li>
+                </ul>
+            </nav>         
+    </div>
+<div id = "container">
+    <div id = "main">
+        <div class = "note">
+            Only orders within Quezon City and Bataan are accepted as of the moment.
+        </div>
+        <h1><center>MY CART</center</h1>
+        <br><br>
+        <% if (error_msg.length > 0) { %>
+            <p id="error-msg"><%= error_msg %></p>
+        <% } %>
+        <div class = "center">
+            <% items.forEach(function(item){ %>
+                <div class="product-container">
+                    <div class = "divider"><br>
+                        <img src="<%= item.image %>" alt="" width="200" height="200"><br>
+                    </div>
+                    <div class = "divider">
+                        <div class="product">
+                            <br>
+                            <%= item.name %>
+                            <div class = "description">
+                                Quantity: <%= item.quantity %>
+                                <br>
+                                Php <%= item.price %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "trash"><br>
+                        <a href="/api/cart/remove/<%= item.id %>.<%= item.productId %>">
+                            <img src="trash.png" alt="" width="40" height="40">
+                        </a>
+                    </div>
+                    <br class = "clearboth">
+                </div>
+            <% }) %>
+            <a href = "payment"><button class = "proceed" type="submit" form="form1" value="Submit">Proceed to Checkout</button></a>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+        </div>
+        <ul class="navigation2">
+            <li><a href="categories">Products</a></li>
+            <li><a href="about">FAQs</a></li>
+            <li><a href="contacts">Contact Us</a></li>
+
+            
+        </ul>
+        <div class="footer-bottom">
+            &copy; Copyright 2020 Don and Doff Medical Equipment Trading - All Rights Reserved
+        </div>
+</footer>
+</body>
+</html>
