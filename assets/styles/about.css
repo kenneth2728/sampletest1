@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#about{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: 200px;
+    margin-top: -75px;
+}
+#about1{
+    font-size: 30px;
+    font-family: Helvetica;
+    text-align: left;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+#about1 li{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    font-style: italic;
+    margin-left: 80px;
+
+}#loc{
+    width: 40px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+#faqs{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 300px;
+}
+#faqs li{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-style: italic;
+    margin-top: 20px;
+   
+}#logo1{
+    width: 150px;
+    float: right;
+    margin-right: 300px;
+    margin-top: 5px;
+}
+#about2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin-left: 350px;
+
+}
+#f1{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin-left: 50px;
+    font-style: oblique;
+   
+}
+#f2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin-left: 50px;
+    font-style: oblique;
+   
+}
+#f3{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin-left: 50px;
+    font-style: oblique;
+   
+}
+.navigation{
+    height: 50%;
+    margin-left: 20vw;
+  }
+  
+  .cart{
+    padding-left: 90px;
+  }
+  
+  .nav2{
+    display: inline-flex;
+    padding-top: 22px;
+    padding-left: 100px;
+  }
+  
