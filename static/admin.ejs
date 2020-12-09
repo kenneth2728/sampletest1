@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="login.css" rel="stylesheet"type="text/css">
+    
+</head>
+<body>
+
+    <div class="header">
+        <a href="/">
+            <img id ="logo" src="logo.png">
+        </a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about">ABOUT US</a></li>
+                    <li><a href="contacts">CONTACTS</a></li>
+                    <li><a href="categories">CATEGORIES</a></li>
+                    <li><a href="profile">PROFILE</a></li>
+                </ul>
+
+                <ul class="nav2">
+                    <li class="iconic"><a href="login"><img id ="signup" src="person.png"></a></li>
+                    <li class="cart"><a href="cart"><img id ="carticon" src="cart.png"></a></li>
+                </ul>
+            </nav>         
+    </div>
+    
+<div id="container">
+    <div id="main">
+        <h4>LOG-IN (ADMIN)</h4>
+        </br>
+        <% if (error_msg.length > 0) { %>
+            <p id="error-msg"><%= error_msg %></p>
+        <% } %>
+        <form action="/api/admin/login" method="POST">
+            <div class="Email">
+            </br>
+                <input name="email" type="text" class="input" placeholder = "Email" required>
+            </div>
+            <div class="password">
+                <input name="password" type="password" class="input" placeholder = "Password" required>
+            </div>
+            </br>
+            <div class="buttons">
+                <a href = "/"><input type="submit" value="LOGIN" class="btn-submit"></a>
+                </br>
+            </div>
+        </form>
+        <a href="admin_signup">
+            <div class="btn-register">
+                Don't have an account? Click here to register.
+            </div>
+        </a>
+    </div>
+</div>
+<footer class="footer">
+<div class="footer-content">
+
+</div>
+<ul class="navigation2">
+    <li><a href="categories">Products</a></li>
+    <li><a href="about">FAQs</a></li>
+    <li><a href="contacts">Contact Us</a></li>
+
+    
+</ul>
+<div class="footer-bottom">
+    &copy; Copyright 2020 Don and Doff Medical Equipment Trading - All Rights Reserved
+</div>
+</footer>
+</body>
+</html>
