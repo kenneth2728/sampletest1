@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#main {
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#success{
+    width: 150px;
+    float: center;
+    margin-top: 50px;
+    
+
+}
+#sms{
+    font-size: 25px;
+    margin-left: 200px;
+    margin-top: -15px;
+}
+#question{
+    width: 170px;
+    float: center;
+    margin-top: 50px;
+}
+#main2 {
+    font-size: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.button1{
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    border: none;
+    transition-duration: 0.4s;
+}
+.button1:hover {
+    background-color: darkgray;
+}
+#contact{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: 200px;
+}
+#contact1{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: 300px;
+    margin-top: 20px;
+    font-style: italic;
+}
+#contact1 li{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    font-style: italic;
+    margin-left: 80px;
+}
+#contact2{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: 300px;
+    margin-top: 50px;
+    font-style: italic;
+}
+#contact2 li{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    font-style: italic;
+    margin-left: 80px;
+}#email{
+    width: 40px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+#contact11{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+
