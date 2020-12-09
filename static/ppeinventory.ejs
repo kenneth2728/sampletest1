@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPE Inventory</title>
+    <link href="ppeinventory.css" rel="stylesheet"type="text/css">
+</head>
+<body>
+
+    <div class="header">
+        <a href="/">
+            <img id ="logo" src="logo.png">
+        </a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="inventorypanel">INVENTORY</a></li>
+                </ul>
+            </nav>         
+    </div>
+    
+    
+<div id="container">
+    <div id="main">
+
+<h1>Inventory</h1>
+<h2>&nbsp;>></h2>
+<h2>&nbsp;<a href="inventorypanel">Categories</a></h2>
+<h2>&nbsp;>></h2>
+<h2>&nbsp;PPE</h2>
+
+<br><br><br><br>
+<h4>PPE Supplies</h4>
+<br><br><br>
+<div class = "center">
+<div class="box-set">
+    <% items.forEach(function(item){ %>
+        <figure class="box">
+        <h5><%= item.name %></h5>
+        <h2>Stocks: <%= item.stock %></h2>
+        <% if (item.stock <= 20) { %>
+            <p style="color: red; padding: 15px 0px; font-family: Helvetica">LOW STOCK</p>
+        <% } %>
+        <div class = "center2">
+            <form method="POST" action="/api/admin/update_product/<%= item._id %>">
+                <input class = "digit" type="number" id="quantity" name="quantity" min="1" max="999">
+                <br><br>
+                <input class = "update" type="submit" value="Submit">
+            </form>
+        </div>
+        </figure>
+    <% }) %>
+</div>
+</div>
+
+<div class = "return">
+    <center><a href="inventorypanel">
+        <input type="submit" value="Return" class="btn">
+     </a></center>
+</div>
+
+</div>
+</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+        </div>
+        <ul class="navigation2">
+            <li><a href="categories">Products</a></li>
+            <li><a href="about">FAQs</a></li>
+            <li><a href="contacts">Contact Us</a></li>
+        </ul>
+    
+        <div class="footer-bottom">
+            &copy; Copyright 2020 Don and Doff Medical Equipment Trading - All Rights Reserved
+        </div>
+
+</footer>
+</body>
+</html>
